@@ -22,14 +22,14 @@
 
 ## Definizione e Notazioni
 
-Un insieme è una **collezione di oggetti**, detti elementi che soddisfa le seguenti caratteristiche:
+Un insieme _(set)_ è una **collezione di oggetti**, detti elementi che soddisfa le seguenti caratteristiche:
 
 - è possibile **stabilire** se un elemento **appartiene** ($\in$) all'insieme
 - gli elementi devono essere tutti **distinti** tra loro
 
 #### Cardinalità
 
-Se $X$ è un insieme con un numero finito di elementi, la **cardinalità** è il numero di elementi che contiene. Si indica con $|X|$.
+Se $X$ è un insieme con un numero finito di elementi, la **cardinalità** _(cardinality)_ è il numero di elementi che contiene. Si indica con $|X|$.
 
 #### Appartenenza
 
@@ -37,11 +37,11 @@ Se $a$ è un elemento di $A$, allora diremo che $a$ **appartiene** ad $A$ e scri
 
 #### Sottoinsieme
 
-Se $A$ e $B$ sono due insiemi, diremo che $B$ è contenuto in $A$ ($B$ **sottoinsieme** di $A$) e scriveremo $B \subseteq A$ se $\forall b \in B, b \in A$.
+Se $A$ e $B$ sono due insiemi, diremo che $B$ è contenuto in $A$ ($B$ **sottoinsieme** _(subset)_ di $A$) e scriveremo $B \subseteq A$ se $\forall b \in B, b \in A$.
 
 #### Sottoinsieme proprio
 
-Un **sottoinsieme proprio** è un sottoinsieme strettaente contenuto in un insieme. Diremo che $B$ è un sottoinsieme proprio di $A$ e scriveremo $B \subset A$ se $B \subseteq A$ e $B \neq A$.
+Un **sottoinsieme proprio** _(proper/strict subset)_ è un sottoinsieme strettaente contenuto in un insieme. Diremo che $B$ è un sottoinsieme proprio di $A$ e scriveremo $B \subset A$ se $B \subseteq A$ e $B \neq A$.
 
 #### Uguaglianza
 
@@ -49,16 +49,16 @@ Due insiemi $A$ e $B$ sono **uguali** se contengono gli stessi elementi. Diremo 
 
 #### Insieme vuoto
 
-L'insieme privo di elementi è chiamato **insieme vuoto** e viene indicato con $\emptyset$. $\emptyset \subset A, \forall A$.
+L'insieme privo di elementi è chiamato **insieme vuoto** _(empty set)_ e viene indicato con $\emptyset$. $\emptyset \subset A, \forall A$.
 
 ## Operazioni su insiemi
 
 Siano $A$ e $B$ due sottoinsiemi di $X$:
 
-- l'**intersezione** di $A$ e $B$ è l'insieme $A \cap B = \lbrace x \in X \ | \ x \in A \land x \in B \rbrace$
-- l'**unione** di $A$ e $B$ è l'insieme $A \cup B = \lbrace x \in X \ | \ x \in A \lor x \in B \rbrace$
-- il **complementare** di $A$ è l'insieme $A^c = \lbrace x \in X \ | \ x \notin A \rbrace$
-- la **differenza** tra $A$ e $B$ è l'insieme $A - B = \lbrace x \in X \ | \ x \in A \land x \notin B \rbrace$
+- l'**intersezione** _(intersection)_ di $A$ e $B$ è l'insieme $A \cap B = \lbrace x \in X \ | \ x \in A \land x \in B \rbrace$
+- l'**unione** _(union)_ di $A$ e $B$ è l'insieme $A \cup B = \lbrace x \in X \ | \ x \in A \lor x \in B \rbrace$
+- il **complementare** _(complement)_ di $A$ è l'insieme $A^c = \lbrace x \in X \ | \ x \notin A \rbrace$
+- la **differenza** _(difference)_ tra $A$ e $B$ è l'insieme $A - B = \lbrace x \in X \ | \ x \in A \land x \notin B \rbrace$
 
 Valgono le proprietà:
 
@@ -68,7 +68,7 @@ Valgono le proprietà:
 
 ### Insieme delle parti
 
-Dato un insieme $X$, l'**insieme delle parti** di $X$ è l'insieme di tutti i sottoinsiemi di $X$ e si indica con $P(X)$:
+Dato un insieme $X$, l'**insieme delle parti** _(power set)_ di $X$ è l'insieme di tutti i sottoinsiemi di $X$ e si indica con $P(X)$:
 
 $$P(X) := \lbrace A \ | \ A \subset X \rbrace$$
 
@@ -82,8 +82,8 @@ Il numero di sottoinsiemi di $n$ elementi di un insieme $X$ è $|X| \choose n$.
 
 Ci sono due modi di descrivere un insieme $A$:
 
-- per **elencazione**: $A = \lbrace a, b, c, ... \rbrace$
-- per **proprietà**: $A = \lbrace a \in X \ | \ P(x) \rbrace$, $P$ è una proprietà
+- per **elencazione** _(roster notation)_: $A = \lbrace a, b, c, ... \rbrace$
+- per **proprietà** _(set builder form)_: $A = \lbrace a \in X \ | \ P(x) \rbrace$, $P$ è una proprietà
 
 Esempio:
 
@@ -96,7 +96,7 @@ Nota: $D$ ha un _numero infinito_ di elementi, quindi non può essere definito p
 
 ### Partizione
 
-Dato un insieme $X$ non vuoto, una **partizione** è una collezione di sottoinsiemi non vuoti $A_i$ di $X, i \in I$, tali che:
+Dato un insieme $X$ non vuoto, una **partizione** _(partition)_ è una collezione di sottoinsiemi non vuoti $A_i$ di $X, i \in I$, tali che:
 
 - $A_i \cap A_j = \emptyset, \forall i \neq j$, tutti i sottoinsiemi sono disgiunti
 - $\displaystyle X = \bigcup_{i \in I} A_i$, l'unione di tutti i sottoinsiemi è uguale all'insieme di partenza
@@ -117,7 +117,7 @@ Esempio:
 
 ### Prodotto cartesiano
 
-Dati due insiemi $A$ e $B$, il **prodotto cartesiano** di $A$ e $B$, $A \times B$, è l'insieme costituito da tutte le coppie ordinate ($(a,b) \neq (b,a)$) di elementi $A$ e $B$:
+Dati due insiemi $A$ e $B$, il **prodotto cartesiano** _(cartesian product)_ di $A$ e $B$, $A \times B$, è l'insieme costituito da tutte le coppie ordinate ($(a,b) \neq (b,a)$) di elementi $A$ e $B$:
 
 $$A \times B = \lbrace (a,b) \ | \ a \in A, b \in B \rbrace$$
 
@@ -131,7 +131,7 @@ $$A_1 \times A_2 \times \cdots A_n = \lbrace (a_1, a_2, \dots, a_n) \ | \ a_i \i
 
 #### Coppia ordinata
 
-Per dare la definizione di prodotto cartesiano, serve la definizione di **coppia ordinata** $(-,-)$:
+Per dare la definizione di prodotto cartesiano, serve la definizione di **coppia ordinata** _(ordered pair)_ $(-,-)$:
 $$a \in A, b \in B \quad (a,b) := \lbrace \lbrace a \rbrace, \lbrace a,b \rbrace \rbrace \subseteq P(A \cup B)$$
 
 ovvero, una coppia ordinata è un **elemento dell'insieme delle parti** dell'insieme delle parti di $A$ unione $B$: $P(P(A \cup B))$.
@@ -142,7 +142,7 @@ Nota: la scrittura $\lbrace a, b \rbrace$ denota l'insieme i cui elementi sono $
 
 ## Relazioni tra insiemi
 
-Siano $A$ e $B$ due insiemi. In modo informale, una **relazione** $R$ tra $A$ e $B$ è una legge che associa qualche elemento di $A$ a qualche elemento di $B$.
+Siano $A$ e $B$ due insiemi. In modo informale, una **relazione** _(relation)_ $R$ tra $A$ e $B$ è una legge che associa qualche elemento di $A$ a qualche elemento di $B$.
 
 Quindi data una relazione si creano delle coppie $(a,b)$ formate da $a \in A$ e $b \in B$, tale che $a$ è in relazione con $b$.
 
@@ -164,7 +164,7 @@ Esempio:
 
 #### Identità
 
-Se $A = B$ e $R = \lbrace (a,a), \forall a \in A \rbrace \subset A \times A$, diciamo che $R$ è la relazione **identica** (ogni elemento $a$ è in relazione solo con _se stesso_).
+Se $A = B$ e $R = \lbrace (a,a), \forall a \in A \rbrace \subset A \times A$, diciamo che $R$ è la relazione **identica** _(identity)_ (ogni elemento $a$ è in relazione solo con _se stesso_).
 
 #### Totalità
 
@@ -176,19 +176,19 @@ Sia $R$ una relazione su un insieme $X$ (quindi $R \subset X \times X$), allora 
 
 #### Riflessiva
 
-Se $(x,x) \in R, \forall x \in X$: ogni elemento è in relazione (almeno) con _se stesso_.
+Se $(x,x) \in R, \forall x \in X$ allora è riflessiva _(reflexive)_: ogni elemento è in relazione (almeno) con _se stesso_.
 
 #### Simmetrica
 
-Se $(x,y) \in R \Rightarrow (y,x) \in R$: se $x$ è in relazione con $y$, allora $y$ è in relazione con $x$.
+Se $(x,y) \in R \Rightarrow (y,x) \in R$ allora è simmetrica _(symmetric)_: se $x$ è in relazione con $y$, allora $y$ è in relazione con $x$.
 
 #### Antisimmetrica
 
-Se $(x,y) \in R$ e $(y,x) \in R \Rightarrow x = y$: due coppie _possono essere_ simmetriche solo se $x = y$.
+Se $(x,y) \in R$ e $(y,x) \in R \Rightarrow x = y$ allora è antisimmetrica _(antisymmetry)_: due coppie _possono essere_ simmetriche solo se $x = y$.
 
 #### Transitiva
 
-Se $(x,y) \in R$ e $(y,z) \in R \Rightarrow (x,z) \in R$: se $x$ è in relazione con $y$ e $y$ è in relazione con $z$, allora $x$ è in relazione con $z$.
+Se $(x,y) \in R$ e $(y,z) \in R \Rightarrow (x,z) \in R$ allora è transitiva _(transitive)_: se $x$ è in relazione con $y$ e $y$ è in relazione con $z$, allora $x$ è in relazione con $z$.
 
 Esempio:
 
@@ -201,7 +201,7 @@ Esempio:
 
 #### Definizione
 
-Sia $R$ una relazione in $X$, diciamo che $R$ è una **relazione di equivalenza** se è **riflessiva**, **simmetrica** e **transitiva**.
+Sia $R$ una relazione in $X$, diciamo che $R$ è una **relazione di equivalenza** _(equivalence relation)_ se è **riflessiva**, **simmetrica** e **transitiva**.
 
 Nota: spesso la relazione di equivalenza è indicata con $\sim$.
 
@@ -209,23 +209,23 @@ Nota: spesso la relazione di equivalenza è indicata con $\sim$.
 
 #### Definizione
 
-Sia $R$ una relazione su un insieme $X$, diciamo che $R$ è una **relazione d'ordine** se è **riflessiva**, **antisimmetrica** e **transitiva**.
+Sia $R$ una relazione su un insieme $X$, diciamo che $R$ è una **relazione d'ordine** _(ordering relation)_ se è **riflessiva**, **antisimmetrica** e **transitiva**.
 
 Nota: spesso la relazione d'ordine è indicata con $\preceq$.
 
 #### Insieme parzialmente ordinato
 
-Sia $X$ un insieme e $\preceq$ una relazione d'ordine su $X$, si dice che l'insieme $X$ con la relazione $\preceq$ è un insieme **parzialmente ordinato**.
+Sia $X$ un insieme e $\preceq$ una relazione d'ordine su $X$, si dice che l'insieme $X$ con la relazione $\preceq$ è un insieme **parzialmente ordinato** _(partially ordered set)_.
 
 Nota: sia $Y \subseteq X$, allora anche $Y$ risulta parzialmente ordinato da $\preceq$.
 
 #### Confrontabilità
 
-Due elementi $x$ e $y$ si dicono **confrontabili** se $x \preceq y$ oppure $y \preceq x$.
+Due elementi $x$ e $y$ si dicono **confrontabili** _(comparable)_ se $x \preceq y$ oppure $y \preceq x$.
 
 #### Insieme totalmente ordinato
 
-Un insieme si dice **totalmente ordinato** se l'insieme è _parzialmente ordinato_ e ogni coppia di elementi è _confrontabile_. In questo caso la relazione si dice **relazione d'ordine totale**.
+Un insieme si dice **totalmente ordinato** _(totally/linearly ordered)_ se l'insieme è _parzialmente ordinato_ e ogni coppia di elementi è _confrontabile_. In questo caso la relazione si dice **relazione d'ordine totale**.
 
 Esempio:
 
@@ -239,15 +239,15 @@ Sia $(X, \preceq)$ un insieme parzialmente ordinato e sia $Y \subseteq X$:
 
 #### Massimo
 
-Un elemento $a \in X$ si dice **massimo** di $X$ se $\forall x \in X$ si ha $x \preceq a$.
+Un elemento $a \in X$ si dice **massimo** _(maximum)_ di $X$ se $\forall x \in X$ si ha $x \preceq a$.
 
 #### Minimo
 
-Un elemento $b \in X$ si dice **minimo** di $X$ se $\forall x \in X$ si ha $b \preceq x$.
+Un elemento $b \in X$ si dice **minimo** _(minimum)_ di $X$ se $\forall x \in X$ si ha $b \preceq x$.
 
 #### Estremo superiore
 
-Un elemento $s \in X$ si dice **estremo superiore** di $Y$
+Un elemento $s \in X$ si dice **estremo superiore** _(infimum)_ di $Y$
 e si scrive $s = Sup(Y)$ se:
 
 - $\forall y \in Y$ si ha $y \preceq s$
@@ -257,7 +257,7 @@ Ovvero il più piccolo elemento di $X$ che è maggiore o uguale a tutti gli elem
 
 #### Estremo inferiore
 
-Un elemento $t \in X$ si dice **estremo inferiore** di $Y$ e si scrive $t = Inf(Y)$ se:
+Un elemento $t \in X$ si dice **estremo inferiore** _(supremum)_ di $Y$ e si scrive $t = Inf(Y)$ se:
 
 - $\forall y \in Y$ si ha $t \preceq y$
 - se $x \in X$ è tale che $x \preceq y, \forall y \in Y$, allora anche $x \preceq t$
@@ -294,19 +294,19 @@ Sia $F : A \rightarrow B$ un'applicazione, si dice che $F$ è:
 
 #### Iniettiva
 
-Se $F(a) = F(b) \Rightarrow a = b$: ogni elemento di $B$ ammette al massimo una controimmagine.
+Se $F(a) = F(b) \Rightarrow a = b$ allora è iniettiva _(injective)_: ogni elemento di $B$ ammette al massimo una controimmagine.
 
 #### Suriettiva
 
-Se $\forall b \in B, \exists a \in A$ tale che $F(a) = B$: ogni elemento di $B$ ammette almeno una controimmagine.
+Se $\forall b \in B, \exists a \in A$ tale che $F(a) = B$ allora è suriettiva _(surjective)_: ogni elemento di $B$ ammette almeno una controimmagine.
 
 #### Biettiva (biunivoca)
 
-Se è sia iniettiva che suriettiva: ogni elemento $b \in B$ ammette esattamente una controimmagine.
+Se è sia iniettiva che suriettiva allora è biettiva _(bijection)_: ogni elemento $b \in B$ ammette esattamente una controimmagine.
 
 ### Composizione di funzioni
 
-Date due applicazioni, la loro **composizione** $F : A \rightarrow B$ e $G : B \rightarrow C$, si può definire un applicazione $(G \circ F)(a) = G(F(a)), \forall a \in A$.
+Date due applicazioni, la loro **composizione** _(composition)_ $F : A \rightarrow B$ e $G : B \rightarrow C$, si può definire un applicazione $(G \circ F)(a) = G(F(a)), \forall a \in A$.
 
 Nota: in generale, se si può considerare $F \circ G$, non è detto che si possa considerare $G \circ F$.
 
@@ -314,7 +314,7 @@ La composizione di funzioni, in caso i _domini siano compatibili_, è **associat
 
 #### Funzione identità
 
-Dato un insieme $A$, l'applicazione $id_A : A \rightarrow A$, definita da $id_A(a) = a, \forall a \in A$ viene detta identica o **identità**.
+Dato un insieme $A$, l'applicazione $id_A : A \rightarrow A$, definita da $id_A(a) = a, \forall a \in A$ viene detta identica o **identità** _(identity)_.
 
 Nota: la composizione di una funzione $F$ con la funzione identità $id_A$ è uguale a $F$.
 
@@ -322,7 +322,7 @@ Nota: la composizione di una funzione $F$ con la funzione identità $id_A$ è ug
 
 Date due applicazioni $f : A \rightarrow B$ e $g : B \rightarrow A$, se $g \circ f = id_A$, allora $f$ è detta **inversa di destra** di $g$ e $g$ è detta **inversa di sinistra** di $f$.
 
-Se $g \circ f = id_A$ e $f \circ g = id_B$, allora $f$ e $g$ sono l'una l'inversa dell'altra.
+Se $g \circ f = id_A$ e $f \circ g = id_B$, allora $f$ e $g$ sono l'una l'inversa _(inverse)_ dell'altra.
 
 ### Teorema: funzione biunivoca ammette inversa
 
